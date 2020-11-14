@@ -1,6 +1,6 @@
-package org.itstep.сommand;
+package org.itstep.command;
 
-public class Error implements Command{
+public class ErrorCommand implements Command{
     @Override
     public void execute(String... args) {
         System.out.println("Error");

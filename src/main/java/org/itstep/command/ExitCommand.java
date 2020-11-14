@@ -1,6 +1,6 @@
-package org.itstep.сommand;
+package org.itstep.command;
 
-public class Exit implements Command{
+public class ExitCommand implements Command{
     @Override
     public void execute(String... args) {
         System.exit(0);

@@ -1,4 +1,4 @@
-package org.itstep.сommand;
+package org.itstep.command;
 
 public enum UsersCommand {
     Help,
@@ -12,19 +12,19 @@ public enum UsersCommand {
     UsersCommand() {
         switch (this.name()){
             case "Help":
-                this.command = new Help();
+                this.command = new HelpCommand();
                 break;
             case "Echo":
-                this.command = new Echo();
+                this.command = new EchoCommand();
                 break;
             case "Now":
-                this.command = new Now();
+                this.command = new NowCommand();
                 break;
             case "Exit":
-                this.command = new Exit();
+                this.command = new ExitCommand();
                 break;
             default:
-                this.command = new Error();
+                this.command = new ErrorCommand();
                 break;
         }
     }
